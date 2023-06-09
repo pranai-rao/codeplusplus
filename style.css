@@ -8,42 +8,114 @@ body {
     margin-bottom: -8px;
 }
 
-header {
-    width: 100%;
+.header {
     position: fixed;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    display: inline-flex;
-    padding-right: 50px;
-}
-
-nav a {
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: space-evenly;
-    font-size: large;
-    color: white;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
-    display: inline-flex;
-    align-items: center;
-    height: 100px;
-}
-
-#logo {
-    padding: 15px 0px 15px 15px;
-}
-
-#logo-text {
-    font-family: 'walter';
     color: white;
     text-decoration: none;
+    font-family: 'walter';
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 2.25rem;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive container */
+.container {
+    width: 100%;
+    margin: auto auto auto 15px;
+}
+
+.subcontainer {
+    width: 95%;
+    margin: auto auto auto 0px;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 60px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+@media(max-width:1600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -200%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #090552;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
 }
 
 .banner {

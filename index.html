@@ -3,29 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <title>Code++</title>
-        <script src="scripts.js"></script>
+        <script src="script.js"></script>
         <link rel="icon" href="logo.svg">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="font.css">
     </head>
     <body onscroll="scrollFunction()">
-        <header>
-            <a href="index.html">
-                <div class="logo">
-                    <img id="logo" src="logo.svg" height="75">
-                    <h1 id="logo-text">CODE++</h1>
+        <header id="header" class="header">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="navbar">
+                        <a href="index.html" class="logo">
+                            <img src="logo.svg" height="75">
+                            <p class="logo-text">Code++</p>
+                        </a>
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About Us</a>
+                            </li>                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
                 </div>
-            </a>
-            <nav>
-                <a>Register</a>
-                <a>About Us</a>
-                <a>Contact Us</a>
-                <a>Materials</a>
-            </nav>
+            </div>
         </header>
         <div class="banner">
             <img class="full" src="hero.jpg">
         </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer>
             <div>
                 <h4>Contact Us</h4>
@@ -38,5 +53,6 @@
                 <p><a href="https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#query=computer%20programming&position=0&from_view=keyword&track=ais">Banner by fullvector on Freepik</a></p>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
