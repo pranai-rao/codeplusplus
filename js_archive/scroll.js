@@ -1,5 +1,5 @@
 function scrollFunction() {
-	var nav = document.getElementsByTagName("header")[0];
+	var nav = document.getElementByClassName("header")
 	var left = document.getElementsByClassName("logo");
 	var links = document.getElementsByTagName("a");
 	
