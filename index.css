@@ -6,6 +6,7 @@ html {
 body {
     font-family: 'jetbrains', Arial, Helvetica, sans-serif;
     margin-bottom: -8px;
+    background-color: #050649;
 }
 
 .header {
@@ -126,7 +127,7 @@ body {
 .full {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 footer {
