@@ -2,7 +2,7 @@ var header = document.querySelector("header");
 var hamburger = document.querySelector(".hamburger");
 var navMenu = document.querySelector(".nav-menu");
 
-
+var banner = document.querySelector(".banner");
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 || header.classList.value == "header active") {
@@ -19,3 +19,12 @@ hamburger.addEventListener("click", () => {
     header.classList.toggle("active");
     scrollFunction();
 })
+
+function heroSizer() {
+    if (window.innerWidth < 1250) {
+        banner.classList.toggle("active");
+    }
+    else if (window.innerWidth >= 1250) {
+        banner.classList.remove("active");
+    }
+}
