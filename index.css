@@ -5,8 +5,8 @@ html {
 
 body {
     font-family: 'jetbrains', Arial, Helvetica, sans-serif;
+    margin-right: -8px;
     margin-bottom: -8px;
-    background-color: #050649;
 }
 
 .header {
@@ -124,6 +124,12 @@ body {
     overflow-y: hidden;
 }
 
+.banner.active {
+    display: inline;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 .full {
     width: 100%;
     height: auto;
@@ -149,4 +155,13 @@ footer {
     background-color: #FF6C04;
     color: black;
     font-weight: bold;
+}
+
+.solid {
+    margin-top: -8px;
+    border-top: 15px solid #FF6C04;
+}
+
+#about-us {
+    margin: 23px 23px;
 }

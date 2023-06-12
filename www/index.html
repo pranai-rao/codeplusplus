@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../index.css">
         <link rel="stylesheet" href="../font.css">
     </head>
-    <body onscroll="scrollFunction()">
+    <body onload="heroSizer()" onresize="window.location.reload()" onscroll="scrollFunction()">
         <header id="header" class="header">
             <div class="container">
                 <div class="subcontainer">
@@ -46,9 +46,9 @@
         <div class="banner">
             <img class="full" src="../images/hero.jpg">
         </div>
-        <div class="divider"></div>
+        <hr class="solid">
         <main id="about-us">
-
+            <h2>About Us</h2>
         </main>
         <footer>
             <div>
@@ -59,7 +59,7 @@
             </div>
             <div id="credits">
                 <h4>Credits</h4>
-                <p><a href="https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#query=computer%20programming&position=0&from_view=keyword&track=ais">Banner by fullvector on Freepik</a></p>
+                <p><a href="https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#query=computer%20programming&position=0&from_view=keyword&track=ais" onclick="return confirm('You are being redirected to an external site!');" target="_blank">Banner by fullvector on Freepik</a></p>
             </div>
         </footer>
         <script src="../script.js"></script>
