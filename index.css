@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 html {
     margin: -8px;
     overflow-x: hidden;
@@ -18,7 +22,7 @@ body {
 .logo {
     color: white;
     text-decoration: none;
-    font-family: 'walter';
+    font-family: 'walter', Helvetica, Arial, sans-serif;
     display: inline-flex;
     align-items: center;
 }
@@ -44,7 +48,7 @@ body {
 
 .subcontainer {
     width: 95%;
-    margin: auto auto auto 0px;
+    margin: auto auto auto 0;
 }
 
 .navbar {
@@ -72,7 +76,7 @@ body {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px 0px;
+    margin: 5px 0;
     transition: all 0.3s ease;
     background-color: white;
 }
@@ -90,10 +94,12 @@ body {
 
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
-    }    
+    }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -140,7 +146,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 25px;
     background-color: black;
     color: white;
 }
@@ -163,5 +169,32 @@ footer {
 }
 
 #about-us {
-    margin: 23px 23px;
+    color: black;
+    margin: 25px 25%;
+    font-family: 'inclusive', Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+}
+
+.about-us {
+    scroll-margin-top: 100px;
+}
+
+.inline {
+    display: inline;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid #090552;
+    border-radius: 3px;
+    padding: 5px 5px;
+    color: #090552;
+}
+
+.quote-image {
+    height: 150px;
+    border-radius: 50%;
+    padding-right: 15px;
 }

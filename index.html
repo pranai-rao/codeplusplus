@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Code++</title>
+        <script src="script.js"></script>
+        <link rel="icon" href="images/logo.svg">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="font.css">
+    </head>
+    <body onload="heroSizer()" onresize="window.location.reload()" onscroll="scrollFunction()">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="navbar">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo.svg" height="75" alt="Code++ logo, an orange terminal icon.">
+                            <p class="logo-text">Code++</p>
+                        </a>
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a id="register" class="nav-link" href="register.html" onclick="hamburgerCloser()">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us" onclick="scrollMargin(); hamburgerCloser()">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="classes.html" onclick="scrollMargin(); hamburgerCloser()">Classes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="materials.html" class="nav-link" onclick="scrollMargin(); hamburgerCloser()">Materials</a>
+                            </li>                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html" onclick="scrollMargin(); hamburgerCloser()">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <img class="full" src="images/hero.jpg" alt="A graphic of a laptop on a purple background.">
+        </div>
+        <hr class="solid">
+        <main id="about-us">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Code++, 
+                a student-led company dedicated to empowering high school and middle school students with the skills and knowledge of programming. 
+                At Code++, we believe that computer science is not just a subject, 
+                but a powerful tool that can unlock countless opportunities in today's digital world. 
+                Our team of passionate and experienced student instructors is committed to creating an engaging and inclusive learning environment, 
+                where students can explore the fascinating world of programming languages and concepts. 
+                Through our carefully designed courses and hands-on projects, we aim to cultivate critical thinking, problem-solving abilities, 
+                and creativity in our students. Whether you are a beginner or have some programming experience, 
+                Code++ offers a range of programs tailored to meet your needs and help you build a strong foundation in computer science. 
+                Join us at Code++, and let's embark on an exciting journey of discovery, innovation, and growth in the realm of programming.
+            </p>
+            <br>
+            <h3>Mission Statement</h3>
+            <p>
+                We believe that middle and high school students should learn computer science and programming due to its immense relevance and benefits in today's digital age.
+                Computer science education equips students with essential skills and knowledge that are increasingly valuable in various fields and industries. 
+                By learning programming languages and concepts, students develop problem-solving abilities, logical thinking, and creativity. 
+                These skills are transferable and empower students to tackle complex challenges in their academic and professional lives. 
+                Additionally, computer science promotes critical thinking and analytical skills, 
+                enabling students to better understand and navigate the rapidly evolving technological landscape. 
+                Furthermore, computer science offers numerous career opportunities, as the demand for skilled professionals in this field continues to grow. 
+                By introducing computer science education early on, 
+                middle and high school students gain a solid foundation and a head start towards acquiring in-demand skills,
+                fostering innovation, and shaping the future.
+            </p>
+            <!-- <div class="quote">
+                <img class="quote-image" src="../images/zuckerburg.jpg">
+                <q>All of my friends who have younger siblings who are going to college or high school &#8212; my number one piece of advice is: You should learn how to program.</q>
+            </div> -->
+        </main>
+        <footer>
+            <div>
+                <h4>Contact Us</h4>
+                <p>Email: support@codeplusplus.dev</p>
+                <p>Phone: +1-603-892-0434</p>
+                <p>&#169; 2023 Code++. All rights reserved.</p>
+            </div>
+            <div id="credits">
+                <h4>Credits</h4>
+                <p><a href="https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#query=computer%20programming&position=0&from_view=keyword&track=ais" onclick="return confirm('You are being redirected to an external site!');" target="_blank">Banner by fullvector on Freepik</a></p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
