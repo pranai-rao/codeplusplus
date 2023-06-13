@@ -30,3 +30,9 @@
     src: url(fonts/jetbrains/JetBrainsMono-Italic.woff2);
     font-style: italic;
 }
+
+/* Inclusive font-faces */
+@font-face {
+    font-family: inclusive;
+    src: url(fonts/inclusive/inclusive.otf);
+}
