@@ -17,6 +17,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 .logo {
@@ -121,6 +122,7 @@ body {
     }
 
     .nav-menu.active {
+        background-color: #090552;
         left: 0;
     }
 }
@@ -134,6 +136,7 @@ body {
     display: inline;
     height: 100vh;
     overflow-y: hidden;
+    /*background-color: #090552;*/
 }
 
 .full {
@@ -142,13 +145,24 @@ body {
     object-fit: cover;
 }
 
-footer {
+#footer-data {
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 25px;
-    background-color: black;
+    background-color: #090552;
     color: white;
+}
+
+#copyright {
+    color: white;
+    background-color: #FF6C04;
+    text-align: center;
+}
+
+#copyright p {
+    padding: 10px;
+    margin: 0 0;
 }
 
 #credits a {
@@ -187,14 +201,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 3px solid #090552;
-    border-radius: 3px;
     padding: 5px 5px;
-    color: #090552;
 }
 
 .quote-image {
+    display: inline-block;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 50% 15px 50% 40px;
     padding-right: 15px;
+    padding-left: 40px;
+}
+
+.quote q {
+    padding-right: 10px;
+}
+
+.slide-link {
+    color: black;
+    text-decoration-color: #FF6C04;
 }
