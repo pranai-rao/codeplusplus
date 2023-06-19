@@ -1,0 +1,89 @@
+.banner {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.banner.active {
+    display: inline;
+    height: 100vh;
+    overflow-y: hidden;
+    /*background-color: #090552;*/
+}
+
+.full {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#footer-data {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 25px;
+    background-color: #090552;
+    color: white;
+}
+
+#copyright {
+    color: white;
+    background-color: #FF6C04;
+    text-align: center;
+}
+
+#copyright p {
+    padding: 10px;
+    margin: 0 0;
+}
+
+#credits a {
+    color: white;
+}
+
+#register {
+    padding: 15px 15px;
+    border-radius: 15px;
+    background-color: #FF6C04;
+    color: black;
+    font-weight: bold;
+}
+
+.solid {
+    margin-top: -8px;
+    border-top: 15px solid #FF6C04;
+}
+
+#about-us {
+    color: black;
+    margin: 25px 25%;
+    font-family: 'inclusive', Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+}
+
+.inline {
+    display: inline;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+}
+
+.quote-image {
+    display: inline-block;
+    height: 150px;
+    border-radius: 50% 15px 50% 40px;
+    padding-right: 15px;
+    padding-left: 40px;
+}
+
+.quote q {
+    padding-right: 10px;
+}
+
+.slide-link {
+    color: black;
+    text-decoration-color: #FF6C04;
+}
