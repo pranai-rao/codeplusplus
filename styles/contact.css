@@ -175,3 +175,22 @@ input[type="submit"] {
         width: 100%;
     }
 }
+
+#phone {
+    display: block;
+}
+
+.input-box #phone {
+    padding-bottom: 10px;
+}
+
+#iti-0__country-listbox {
+    min-width: 445px;
+    max-width: fit-content;
+}
+
+#message {
+    resize: none;
+    overflow: hidden;
+    box-sizing: border-box;
+}
