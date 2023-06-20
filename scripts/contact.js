@@ -36,7 +36,7 @@ function sendEmail() {
         Bcc: ['pranai@rao.me', 'rayasam.maitreyi@gmail.com'], // The email of the employees/customer service team (same as 'To' field in first email)
         From : "raospalace@gmail.com", // Should be a registered smtpJS email (e.g., noreply@codeplusplus.dev)
         Subject :  subject, // Will have a(n) (ideally unique) random ticket number appended to the subjectTemplate
-        Body : "Greetings from Code++!<br>" +
+        Body : "Greetings from Code++!<br><br>" +
             "We wanted to let you know that we received your message and that our " +
             "customer service team will be getting back to you as soon as possible. If this is a question for your teacher " +
             "in an ongoing class, contact them directly for the fastest response. If this is an urgent request, please" +
@@ -50,7 +50,7 @@ function sendEmail() {
             + "<br> Message: " + message.value
             + "<br><br>--<br>The Code++ Team<br><a href='mailto:support@codeplusplus.dev'>support@codeplusplus.dev</a>"
             + "<br>Do not reply to <strong><em>this</em> email address.</strong> " +
-            "A customer service representative will reply to this email within 1-2 business days. After the" +
+            "A customer service representative will reply to this email within 1-2 business days. After the " +
             "representative has contacted you, you may reply directly to their email."
     }).then();
 }
