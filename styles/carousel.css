@@ -5,11 +5,12 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
-    background-color: #4f4f4f;
+    background-color: aliceblue;
     padding: 10px 5px 5px 5px;
-    border-radius: 5px;
-    color: #FF6C04;
+    color: #090552;
     min-height: 240px;
+    border: 5px solid #090552;
+    border-radius: 10px;
 }
 
 /* Hide the images by default */
@@ -25,7 +26,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: #090552;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -41,7 +42,8 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(9,5,82,0.8);
+    color: white;
 }
 
 /* Caption text */
@@ -89,4 +91,8 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.author {
+    padding-left: 15px;
 }

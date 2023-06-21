@@ -119,3 +119,11 @@
         left: 0;
     }
 }
+
+#register {
+    padding: 15px 15px;
+    border-radius: 15px;
+    background-color: #FF6C04;
+    color: black;
+    font-weight: bold;
+}

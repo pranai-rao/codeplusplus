@@ -1,0 +1,30 @@
+#about-us {
+    color: black;
+    margin: 25px 25%;
+    font-family: 'inclusive', Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 5px;
+}
+
+.quote-image {
+    display: inline-block;
+    height: 150px;
+    border-radius: 50% 15px 50% 40px;
+    padding-right: 15px;
+    padding-left: 40px;
+}
+
+.quote q {
+    padding-right: 10px;
+}
+
+.slide-link {
+    color: black;
+    text-decoration-color: #FF6C04;
+}
