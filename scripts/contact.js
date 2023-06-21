@@ -1,6 +1,6 @@
  var fullname = document.querySelector("#fullname"),
      email = document.querySelector("#email"),
-     phoneNumber = document.querySelector("#phone-number")
+     phone = document.querySelector("#phone-number")
      message = document.querySelector("#message");
 
  var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -26,7 +26,7 @@ function sendEmail() {
         Subject :  subject, // Will have a(n) (ideally unique) random ticket number appended to the subjectTemplate
         Body : "Name: " + fullname.value
             + "<br> Email: " + email.value
-            + "<br> Phone number: " + phoneNumber.innerHTML
+            + "<br> Phone number: " + phone.innerHTML
             + "<br> Message: " + message.value
     }).then(
         message => alert(message + "\n" + subject));
@@ -46,7 +46,7 @@ function sendEmail() {
             "to add the incorrect submission's ticket number, so we can get back to you as soon as possible.<br><br>" +
             "Name: " + fullname.value
             + "<br> Email: " + email.value
-            + "<br> Phone number: " + phoneNumber.innerHTML
+            + "<br> Phone number: " + phone.innerHTML
             + "<br> Message: " + message.value
             + "<br><br>--<br>The Code++ Team<br><a href='mailto:support@codeplusplus.dev'>support@codeplusplus.dev</a>"
             + "<br>Do not reply to <strong><em>this</em> email address.</strong> " +
