@@ -24,10 +24,10 @@
                         </a>
                         <ul class="nav-menu">
                             <li class="nav-item">
-                                <a id="register" class="nav-link" href="register.html" onclick="hamburgerCloser()">Register</a>
+                                <a id="register" class="nav-link" href="register.html" onclick="scrollMargin(); hamburgerCloser()">Register</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#about-us" onclick="scrollMargin(); hamburgerCloser()">About Us</a>
+                                <a class="nav-link" href="about.html" onclick="scrollMargin(); hamburgerCloser()">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="classes.html" onclick="scrollMargin(); hamburgerCloser()">Classes</a>
@@ -50,12 +50,12 @@
         </header>
         <main id="contact">
             <div class="content">
-                <h2>Contact Us</h2> <br>
+                <h2>Contact Us</h2>
                 <p>At Code++, we are dedicated to providing the best service we can.
                     If you have any questions, comments, or concerns to raise with us, please drop us a note.
                     We will respond to your queries as soon as possible and do our best to incorporate your feedback into our program!
                 </p>
-            </div><br><br>
+            </div>
             <div class="form-container">
                 <div class="contact-info">
                     <div class="info-container">
@@ -122,12 +122,28 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div id="footer-data">
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>Email: support@codeplusplus.dev</p>
+                    <p>Phone: +1-603-892-0434</p>
+                </div>
+                <div id="credits">
+                    <h4>Credits</h4>
+                    <p><a href="https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#query=computer%20programming&position=0&from_view=keyword&track=ais" onclick="return confirm('You are being redirected to an external site!');" target="_blank">Banner by fullvector on Freepik</a></p>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>&#169; 2023 Code++. All rights reserved.</p>
+            </div>
+        </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="https://kit.fontawesome.com/7d6bbe0995.js" crossorigin="anonymous"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="scripts/contact.js"></script>
     </body>
-    suppress JSUnusedGlobalSymbols, JSUnresolvedReference
+    <!--suppress JSUnusedGlobalSymbols, JSUnresolvedReference -->
     <script>
         function getIp(callback) {
             fetch('https://ipinfo.io/json?token=0cb24bb098acfc', { headers: { 'Accept': 'application/json' }})
@@ -151,7 +167,6 @@
 
         const info = document.querySelector(".alert-info");
 
-        // noinspection JSUnresolvedReference
         function processPhoneNumber() {
             const phoneNumber = phoneInput.getNumber();
 
