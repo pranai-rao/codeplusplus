@@ -1,38 +1,38 @@
 /* Walter font-faces */
 @font-face {
     font-family: walter;
-    src: url(fonts/walter/Walter-Regular.woff2);
+    src: url(../fonts/walter/Walter-Regular.woff2);
 }
 
 @font-face {
     font-family: upcharge;
-    src: url(fonts/upcharge.woff);
+    src: url(../fonts/upcharge/upcharge.woff);
 }
 
 /* Jetbrains Mono font-faces */
 @font-face {
     font-family: jetbrains;
-    src: url(fonts/jetbrains/JetBrainsMono-Regular.woff2);
+    src: url(../fonts/jetbrains/JetBrainsMono-Regular.woff2);
 }
 @font-face {
     font-family: jetbrains;
-    src: url(fonts/jetbrains/JetBrainsMono-Bold.woff2);
+    src: url(../fonts/jetbrains/JetBrainsMono-Bold.woff2);
     font-weight: bold;
 }
 @font-face {
     font-family: jetbrains;
-    src: url(fonts/jetbrains/JetBrainsMono-BoldItalic.woff2);
+    src: url(../fonts/jetbrains/JetBrainsMono-BoldItalic.woff2);
     font-style: italic;
     font-weight: bold;
 }
 @font-face {
     font-family: jetbrains;
-    src: url(fonts/jetbrains/JetBrainsMono-Italic.woff2);
+    src: url(../fonts/jetbrains/JetBrainsMono-Italic.woff2);
     font-style: italic;
 }
 
 /* Inclusive font-faces */
 @font-face {
     font-family: inclusive;
-    src: url(fonts/inclusive/inclusive.otf);
+    src: url(../fonts/inclusive/inclusive.otf);
 }

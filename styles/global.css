@@ -1,0 +1,14 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    margin: -8px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'jetbrains', Arial, Helvetica, sans-serif;
+    margin-right: -8px;
+    margin-bottom: -8px;
+}

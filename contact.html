@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/intl-tel-input.js"></script>
+        <script src="scripts/contact.js"></script>
+        <link rel="icon" href="images/logo.svg">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/font.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="navbar">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo.svg" height="75" alt="Code++ logo, an orange terminal icon.">
+                            <p class="logo-text">Code++</p>
+                        </a>
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a id="register" class="nav-link" href="register.html" onclick="hamburgerCloser()">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about-us" onclick="scrollMargin(); hamburgerCloser()">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="classes.html" onclick="scrollMargin(); hamburgerCloser()">Classes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="materials.html" class="nav-link" onclick="scrollMargin(); hamburgerCloser()">Materials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html" onclick="scrollMargin(); hamburgerCloser()">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="contact">
+            <div class="content">
+                <h2>Contact Us</h2> <br>
+                <p>At Code++, we are dedicated to providing the best service we can.
+                    If you have any questions, comments, or concerns to raise with us, please drop us a note.
+                    We will respond to your queries as soon as possible and do our best to incorporate your feedback into our program!
+                </p>
+            </div><br><br>
+            <div class="form-container">
+                <div class="contact-info">
+                    <div class="info-container">
+                        <a href="index.html">
+                            <div class="box">
+                                <div id="globe" class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                <div class="text">
+                                    <h3>Website</h3>
+                                    <p>www.codeplusplus.dev</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>+1 (603) 892-0434</p>
+                            </div>
+                        </div>
+                        <a href="mailto:support@codeplusplus.dev" target="_blank">
+                            <div class="box">
+                                <div id="mail" class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p>support@codeplusplus.dev</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h2>Send Message</h2>
+                        <div class="input-box">
+                            <label for="fullname">
+                                <input type="text" id="fullname" name="fullname" required="required">
+                                <span>Full Name</span>
+                            </label>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">
+                                <input type="email" id="email" name="email" required="required">
+                                <span>Email</span>
+                            </label>
+                        </div>
+                        <div class="input-box">
+                            <label id="phone-label" for="phone">
+                                <input onfocusout="processPhoneNumber()" type="tel" id="phone" name="phone" required="required">
+                            </label>
+                        </div>
+                        <div class="input-box">
+                            <label for="message">
+                                <textarea oninput="messageSizer()" id="message" required="required"></textarea>
+                                <span>Type your message...</span>
+                            </label>
+                        </div>
+                        <div class="input-box">
+                            <label for="submit">
+                                <input id="submit" type="submit" name="submit" value="Send">
+                            </label>
+                        </div>
+                    </form>
+                    <div id="phone-number" class="alert alert-info" style="display: none;"></div>
+                </div>
+            </div>
+        </main>
+        <script src="scripts/hamburger.js"></script>
+        <script src="https://kit.fontawesome.com/7d6bbe0995.js" crossorigin="anonymous"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="scripts/contact.js"></script>
+    </body>
+    suppress JSUnusedGlobalSymbols, JSUnresolvedReference
+    <script>
+        function getIp(callback) {
+            fetch('https://ipinfo.io/json?token=0cb24bb098acfc', { headers: { 'Accept': 'application/json' }})
+                .then((resp) => resp.json())
+                .catch(() => {
+                    return {
+                        country: 'us',
+                    };
+                })
+                .then((resp) => callback(resp.country));
+        }
+
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            preferredCountries: ["us"],
+            initialCountry: "auto",
+            geoIpLookup: getIp,
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+
+        const info = document.querySelector(".alert-info");
+
+        // noinspection JSUnresolvedReference
+        function processPhoneNumber() {
+            const phoneNumber = phoneInput.getNumber();
+
+            // info.style.display = "";
+            // info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+            info.innerHTML = `${phoneNumber}`;
+        }
+    </script>
+</html>
