@@ -1,36 +1,28 @@
-#about-us {
-    color: black;
+main {
     margin: 25px auto;
-    font-family: 'inclusive', Helvetica, Arial, sans-serif;
-    font-size: 1.25em;
     max-width: 800px;
+    font-family: 'inclusive', Helvetica, Arial, sans-serif;
 }
 
-#about-us-container {
-    margin-left: 23px;
-    margin-right: 15px;
+h2 {
+    font-weight: bold;
 }
 
-.quote {
+.bio-data {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 5px 5px;
 }
 
-.quote-image {
-    display: inline-block;
-    height: 150px;
-    border-radius: 50% 15px 50% 40px;
-    padding-right: 15px;
-    padding-left: 40px;
+.bio {
+    margin-left: 20px;
 }
 
-.quote q {
-    padding-right: 10px;
+.bio-image-container {
+    width: 500px;
 }
 
-.slide-link {
-    color: black;
-    text-decoration-color: #FF6C04;
+.bio-image {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid black;
 }

@@ -4,11 +4,6 @@
     src: url(../fonts/walter/Walter-Regular.woff2);
 }
 
-@font-face {
-    font-family: upcharge;
-    src: url(../fonts/upcharge/upcharge.woff);
-}
-
 /* Jetbrains Mono font-faces */
 @font-face {
     font-family: jetbrains;

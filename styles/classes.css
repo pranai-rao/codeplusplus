@@ -1,0 +1,21 @@
+main {
+    max-width: 800px;
+    margin: 25px auto;
+    font-family: 'inclusive', Helvetica, Arial, sans-serif;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+}
+
+.lang-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.lang-desc {
+    margin-left: 50px;
+}

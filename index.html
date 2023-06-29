@@ -5,19 +5,21 @@
         <title>Home</title>
         <script src="scripts/index.js"></script>
         <script src="scripts/hamburger.js"></script>
+        <script src="scripts/carousel.js"></script>
         <link rel="icon" href="images/logo.svg">
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/indexHeader.css">
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/font.css">
+        <link rel="stylesheet" href="styles/carousel.css">
     </head>
-    <body onload="heroSizer()" onresize="window.location.reload()" onscroll="scrollFunction()">
+    <body onload="heroSizer(); scrollMargin()" onresize="window.location.reload()" onscroll="scrollFunction()">
         <header id="header" class="header">
             <div class="container">
                 <div class="subcontainer">
                     <div class="navbar">
                         <a href="index.html" class="logo">
-                            <img src="images/logo.svg" height="75" alt="Code++ logo, an orange terminal icon.">
+                            <img class="logo-image" src="images/logo.svg" alt="Code++ logo, an orange terminal icon.">
                             <p class="logo-text">Code++</p>
                         </a>
                         <ul class="nav-menu">
@@ -25,14 +27,14 @@
                                 <a id="register" class="nav-link" href="register.html" onclick="hamburgerCloser()">Register</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#mission-container" onclick="scrollMargin();hamburgerCloser()">Mission Statement</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="about.html" onclick="hamburgerCloser()">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="classes.html" onclick="hamburgerCloser()">Classes</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="materials.html" class="nav-link" onclick="hamburgerCloser()">Materials</a>
-                            </li>                            
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html" onclick="hamburgerCloser()">Contact Us</a>
                             </li>
@@ -49,6 +51,151 @@
         <div class="banner">
             <img class="full" src="images/hero.jpg" alt="A graphic of a laptop on a purple background.">
         </div>
+        <div class="solid"></div>
+        <main id="about-us">
+            <div id="mission-container">
+                <h2>Mission Statement</h2>
+                <p>
+                    Welcome to Code++,
+                    a student-led company dedicated to <a class="slide-link" href="#slideshow-container" onclick="currentSlide(1)">empowering high school and middle school students</a> with the skills and knowledge of programming.
+                    At Code++, we believe that <a href="#slideshow-container" class="slide-link" onclick="currentSlide(4)">computer science is not just a subject</a>,
+                    but <a href="#slideshow-container" class="slide-link" onclick="currentSlide(10)">a powerful tool that can unlock countless opportunities in today's digital world.</a>
+                    Our team of passionate and experienced student instructors is committed to creating an engaging and inclusive learning environment,
+                    where students can explore the fascinating world of programming languages and concepts.
+                    Through our carefully designed courses and hands-on projects, <a href="#slideshow-container" class="slide-link" onclick="currentSlide(5)">we aim to cultivate critical thinking</a>, problem-solving abilities,
+                    and creativity in our students. Whether you are a beginner or have some programming experience,
+                    Code++ offers a range of programs tailored to meet your needs and help you build a strong foundation in computer science.
+                    Join us at Code++, and let's embark on <a href="#slideshow-container" class="slide-link" onclick="currentSlide(9)">an exciting journey of discovery, innovation, and growth in the realm of programming.</a>
+                </p>
+                <br>
+                <p>
+                    We believe that middle and high school students should learn computer science and programming due to its immense relevance and benefits in today's digital age.
+                    Computer science education equips students with <a href="#slideshow-container" class="slide-link" onclick="currentSlide(3)">essential skills</a> and knowledge that are
+                    <a href="#slideshow-container" class="slide-link" onclick="currentSlide(7)">increasingly valuable in various fields</a> and industries.
+                    By learning programming languages and concepts, <a href="#slideshow-container" class="slide-link" onclick="currentSlide(6)">students develop problem-solving abilities, logical thinking, and creativity</a>.
+                    These skills are transferable and empower students to tackle complex challenges in their academic and professional lives.
+                    Additionally, <a href="#slideshow-container" class="slide-link" onclick="currentSlide(2)">computer science promotes critical thinking and analytical skills</a>,
+                    enabling students to better understand and navigate the rapidly evolving technological landscape.
+                    Furthermore, computer science offers numerous career opportunities, as the demand for skilled professionals in this field continues to grow.
+                    By introducing computer science education early on,
+                    middle and high school students gain a solid foundation and <a href="#slideshow-container" class="slide-link" onclick="currentSlide(8)">a head start towards acquiring in-demand skills,
+                    fostering innovation, and shaping the future.</a>
+                </p>
+
+                <!-- Slideshow -->
+                <!-- Slideshow container -->
+                <div id="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="number-text">1 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/zuckerburg.jpg" alt="Image of Mark Zuckerberg">
+                            <q>All of my friends who have younger siblings who are going to college or high school &#8212; my number one piece of advice is: You should learn how to program.</q>
+                        </div>
+                        <p class="author">~ Mark Zuckerberg</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">2 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/hopper.jpg" alt="Image of Grace Hopper">
+                            <q>Humans are allergic to change. They love to say, 'We've always done it this way.' I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.</q>
+                        </div>
+                        <p class="author">~ Grace Hopper</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">3 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/hawking.jpg" alt="Image of Stephen Hawking">
+                            <q>Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.</q>
+                        </div>
+                        <p class="author">~ Stephen Hawking</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">4 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/torvalds.jpeg" alt="Image of Linus Torvalds">
+                            <q>Most of the good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.</q>
+                        </div>
+                        <p class="author">~ Linus Torvalds</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">5 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/jobs.jpg" alt="Image of Steve Jobs">
+                            <q>Everybody should learn to program a computer, because it teaches you how to think.</q>
+                        </div>
+                        <p class="author">~ Steve Jobs</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">6 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/saujani.jpg" alt="Image of Reshma Saujani">
+                            <q>Coding, it's an endless process of trial and error, of trying to get the right command in the right place, with sometimes just a semicolon making the difference between success and failure. Code breaks, and then it falls apart, and it often takes many, many tries until that magical moment when what you're trying to build comes to life.</q>
+                        </div>
+                        <p class="author">~ Reshma Saujani</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">7 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/hsieh.jpg" alt="Image of Tony Hsieh">
+                            <q>I think everyone should get a little exposure to computer science because it really forces you to think in a slightly different way, and it's a skill that you can apply in life in general, whether you end up in computer science or not.</q>
+                        </div>
+                        <p class="author">~ Tony Hsieh</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">8 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/nadella.jpg" alt="Image of Satya Nadella">
+                            <q>Computer science empowers students to create the world of tomorrow.</q>
+                        </div>
+                        <p class="author">~ Satya Nadella</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">9 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/gates.JPG" alt="Image of Bill Gates">
+                            <q>Software is a great combination between artistry and engineering. When you finally get done and get to appreciate what you have done, it is like a part of yourself that you've put together.</q>
+                        </div>
+                        <p class="author">~ Bill Gates</p>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number-text">10 / 10</div>
+                        <div class="quote">
+                            <img class="quote-image" src="images/musk.jpg" alt="Image of Elon Musk">
+                            <q>You can do amazing things with code, and it’s only getting more powerful!</q>
+                        </div>
+                        <p class="author">~ Elon Musk</p>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                </div>
+                <!-- /Slideshow -->
+            </div>
+        </main>
         <footer>
             <div id="footer-data">
                 <div>

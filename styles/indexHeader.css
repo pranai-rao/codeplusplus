@@ -19,6 +19,12 @@
     font-family: 'walter', Helvetica, Arial, sans-serif;
     display: inline-flex;
     align-items: center;
+    padding-right: 15px;
+}
+
+.logo-image {
+    padding-right: 15px;
+    width: 100px;
 }
 
 .logo-text {
@@ -81,7 +87,7 @@
     }
 }
 
-@media(max-width:1024px) {
+@media(max-width:1300px) {
     .hamburger {
         display: block;
     }
