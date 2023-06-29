@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+        <script src="scripts/hamburger.js"></script>
+        <link rel="icon" href="images/logo.svg">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/font.css">
+        <link rel="stylesheet" href="styles/classes.css">
+    </head>
+    <body onload="spacer()" onresize="window.location.reload()">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="navbar">
+                        <a href="index.html" class="logo">
+                            <img class="logo-image" src="images/logo.svg" alt="Code++ logo, an orange terminal icon.">
+                            <p class="logo-text">Code++</p>
+                        </a>
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a id="register" class="nav-link" href="register.html" onclick="hamburgerCloser()">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#mission-container" onclick="scrollMargin();hamburgerCloser()">Mission Statement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html" onclick="hamburgerCloser()">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="classes.html" onclick="hamburgerCloser()">Classes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html" onclick="hamburgerCloser()">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h2>Classes Offered</h2>
+            <div class="lang-container">
+                <div class="lang">
+                    <div class="lang-logo">
+                        <img class="lang-logo" src="images/python.png" alt="Python logo">
+                    </div>
+                    <div class="lang-desc">
+                        <h3>Python 101 — <s>$150</s> <span style="color:#FF6C04;">$100</span> — <a href="register.html">Register Now!</a></h3>
+                        <p>
+                            Python is a popular and beginner-friendly programming language that is widely used
+                            for various purposes, such as web development, data analysis, artificial intelligence,
+                            and automation. It provides a simple syntax and an extensive library ecosystem,
+                            making it an excellent choice for beginners.<br><br>Python's readability and clarity make it
+                            easy to understand and learn. It emphasizes code readability by using indentation instead
+                            of brackets, which encourages clean and organized programming practices.
+                            This feature also makes Python a great language for collaborative projects.<br><br>
+                            Overall, Python is an excellent choice for students beginning to learn programming due to
+                            its readability, versatility, extensive library ecosystem, and supportive community.
+                            With Python, students can quickly grasp fundamental programming concepts while building
+                            practical projects and exploring various domains of computer science.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="lang">
+                    <div class="lang-logo">
+                        <img class="lang-logo" src="images/java.png" alt="Java logo">
+                    </div>
+                    <div class="lang-desc">
+                        <h3>Java [Coming later . . .]</h3>
+                        <p>
+                            Java is a powerful and widely-used programming language that is highly regarded for its
+                            versatility, portability, and robustness. It is an object-oriented language,
+                            meaning it focuses on creating reusable code components called objects.<br><br>
+                            Java's syntax is similar to other popular programming languages like C++ and C#,
+                            making it easier for students to transition between these languages.
+                            Its straightforward and structured syntax emphasizes clarity and readability,
+                            promoting good coding practices.<br><br>Overall, Java is an excellent language for students
+                            starting their programming journey. Its versatility, platform independence,
+                            object-oriented nature, and strong community support make it a valuable skill to acquire.
+                            Learning Java equips students with the fundamentals of programming and prepares them for a
+                            wide range of software development opportunities.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="lang">
+                    <div class="lang-logo">
+                        <img class="lang-logo" src="images/html.png" alt="HTML logo">
+                        <img class="lang-logo" src="images/css.png" alt="CSS logo">
+                        <img class="lang-logo" src="images/js.png" alt="JS logo">
+                    </div>
+                    <div class="lang-desc">
+                        <h3>Web Development (HTML + CSS + JS) [Coming later . . .]</h3>
+                        <p>
+                            HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JS (JavaScript)
+                            are three essential languages used in web development. They work together to create and
+                            style web pages, as well as provide interactivity and functionality.<br><br>
+                            HTML is the foundation of web pages. It is a markup language used to structure the content
+                            and define the elements of a webpage. With HTML, you can create headings, paragraphs,
+                            images, links, tables, forms, and more. It uses tags to mark up different parts of a
+                            webpage, providing a hierarchical structure that browsers can interpret and display.
+                            <br><br>CSS is used to style HTML elements and make web pages visually appealing.
+                            It separates the presentation (styling) from the structure (HTML). CSS allows you to
+                            specify colors, fonts, layouts, and other visual properties of HTML elements. It uses
+                            selectors to target specific elements and applies rules to define their appearance. With
+                            CSS, you can create responsive designs, adjust layouts for different screen sizes, and
+                            enhance the user experience.<br><br>JavaScript is a programming language that adds interactivity
+                            and functionality to web pages. It allows you to manipulate and modify HTML and CSS
+                            dynamically. With JavaScript, you can respond to user actions, validate forms, create
+                            animations, and build interactive features like image sliders, dropdown menus, and more.
+                            JavaScript is also commonly used for client-side web development, meaning the code runs
+                            directly in the user's browser. When used together, HTML, CSS, and JavaScript enable the
+                            creation of dynamic and engaging web pages. HTML provides the structure and content, CSS
+                            enhances the presentation and styling, and JavaScript adds interactivity and functionality.
+                            Learning these languages provides a solid foundation for web development. They are
+                            relatively easy to learn and widely supported across browsers. As you progress, you will
+                            discover frameworks and libraries that build upon these languages, such as Bootstrap for
+                            CSS or React for JavaScript, which further expand your capabilities and simplify complex
+                            tasks. With HTML, CSS, and JavaScript, students can create their own web pages,
+                            customize existing designs, and gain the skills needed to pursue careers in web
+                            development, design, or related fields.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-data">
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>Email: support@codeplusplus.dev</p>
+                    <p>Phone: +1-603-892-0434</p>
+                </div>
+                <div id="credits">
+                    <h4>Credits</h4>
+                    <p><a href="https://www.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_4102879.htm#query=computer%20programming&position=0&from_view=keyword&track=ais" onclick="return confirm('You are being redirected to an external site!');" target="_blank">Banner by fullvector on Freepik</a></p>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>&#169; 2023 Code++. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/spacer.js"></script>
+    </body>
+</html>
