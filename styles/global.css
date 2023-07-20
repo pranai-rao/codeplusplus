@@ -160,3 +160,7 @@ body {
 #credits a {
     color: white;
 }
+
+.center {
+    text-align: center;
+}
