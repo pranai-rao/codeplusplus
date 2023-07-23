@@ -1,5 +1,7 @@
 main {
     font-family: 'inclusive', Helvetica, Arial, sans-serif;
     max-width: 800px;
-    margin: 25px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
 }
