@@ -19,3 +19,17 @@ main {
 .lang-desc {
     margin-left: 50px;
 }
+
+a {
+    color: #FF6C04;
+}
+
+.button {
+    color: black;
+    background-color: #FF6C04;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-left: 15px;
+}

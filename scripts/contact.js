@@ -21,7 +21,7 @@ function sendEmail() {
     var subject = subjectTemplate.concat(ticketGenerator());
     Email.send({
         SecureToken : "2dae4e95-32e6-4faa-b1a4-7023e00e193c", // The secure token of the registered smtpJS email
-        To : ['pranai.rao@codeplusplus.dev', 'maitreyi.rayasam@codeplusplus.dev'], // The email that the ticket will be sent to (e.g., contact@codeplusplus.dev)
+        To : ['pranai.rao@codeplusplus.dev', 'maitreyi.rayasam@codeplusplus.dev', 'yuvan.shah@codeplusplus.dev'], // The email that the ticket will be sent to (e.g., contact@codeplusplus.dev)
         From : "noreply@codeplusplus.dev", // Should be a registered smtpJS email (e.g., noreply@codeplusplus.dev)
         Subject :  subject, // Will have a(n) (ideally unique) random ticket number appended to the subjectTemplate
         Body : "Name: " + fullname.value

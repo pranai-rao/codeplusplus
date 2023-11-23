@@ -49,35 +49,26 @@
         </header>
         <main>
             <h1>Classes Offered</h1>
+            <h2>New Year Specials</h2>
+            <p>Attention all students! To welcome a new year of learning ahead of us in 2024, Code++ is happy to announce massive discounts on courses:</p>
+            <ul>
+                <li>Get 20% off when purchasing any 2 courses</li>
+                <li>Get 30% off when purchasing any 3 courses</li>
+            </ul>
+            <p>These promotions will be applied automatically when you register (promotions cannot be combined). We hope you'll take advantage of this, and we look forward to seeing you learn this year!</p>
+            <h2>Jump to Course</h2>
+            <ul>
+                <li><a href="#java" onclick="scrollMarginJava()">Java: Java 101</a></li>
+                <li><a href="#python" onclick="scrollMarginPython()">Python: Python 101, Python 102</a></li>
+                <li><a href="#html" onclick="scrollMarginWeb()">Web Design: Web Design 101</a></li>
+            </ul>
             <div class="lang-container">
-                <div class="lang">
-                    <div class="lang-logo">
-                        <img class="lang-logo" src="images/python.png" alt="Python logo">
-                    </div>
-                    <div class="lang-desc">
-                        <h3>Python 101 — <s>$150</s> <span style="color:#FF6C04;">$100</span> — <a href="register.html">Register Now!</a></h3>
-                        <p>
-                            Python is a popular and beginner-friendly programming language that is widely used
-                            for various purposes, such as web development, data analysis, artificial intelligence,
-                            and automation. It provides a simple syntax and an extensive library ecosystem,
-                            making it an excellent choice for beginners.<br><br>Python's readability and clarity make it
-                            easy to understand and learn. It emphasizes code readability by using indentation instead
-                            of brackets, which encourages clean and organized programming practices.
-                            This feature also makes Python a great language for collaborative projects.<br><br>
-                            Overall, Python is an excellent choice for students beginning to learn programming due to
-                            its readability, versatility, extensive library ecosystem, and supportive community.
-                            With Python, students can quickly grasp fundamental programming concepts while building
-                            practical projects and exploring various domains of computer science.
-                        </p>
-                    </div>
-                </div>
-                <br><br>
-                <div class="lang">
+                <div id="java" class="lang">
                     <div class="lang-logo">
                         <img class="lang-logo" src="images/java.png" alt="Java logo">
                     </div>
                     <div class="lang-desc">
-                        <h3>Java [Coming later . . .]</h3>
+                        <h2>Java</h2>
                         <p>
                             Java is a powerful and widely-used programming language that is highly regarded for its
                             versatility, portability, and robustness. It is an object-oriented language,
@@ -91,17 +82,87 @@
                             Learning Java equips students with the fundamentals of programming and prepares them for a
                             wide range of software development opportunities.
                         </p>
+                        <h3>Java 101 — $150 <a class="button" href="register.html">Register Now!</a></h3>
+                        <p>
+                            Java 101 is designed to teach you the very basics of Java. By the end of the course you will be well-versed in printing, 
+                            inputs, conditionals, methods, and writing basic classes. This is an excellent introduction to Java, run at a slow pace to enable the student 
+                            to understand the multifaceted and complex nature of Java. If students are interested in FIRST Tech Challenge or FIRST Robotics competition, 
+                            Java 101 will serve as an excellent foundation. Feel free to <a href="contact.html">contact us</a> with any questions about the 
+                            course or by email at <a href="mailto:support@codeplusplus.dev">support@codeplusplus.dev</a>.
+                        </p>
                     </div>
                 </div>
                 <br><br>
-                <div class="lang">
+
+                <div id="python" class="lang">
                     <div class="lang-logo">
-                        <img class="lang-logo" src="images/html.png" alt="HTML logo">
-                        <img class="lang-logo" src="images/css.png" alt="CSS logo">
-                        <img class="lang-logo" src="images/js.png" alt="JS logo">
+                        <img class="lang-logo" src="images/python.png" alt="Python logo">
                     </div>
                     <div class="lang-desc">
-                        <h3>Web Development (HTML + CSS + JS) [Coming later . . .]</h3>
+                        <h2>Python</h2>
+                        <p>
+                            Python is a popular and beginner-friendly programming language that is widely used
+                            for various purposes, such as web development, data analysis, artificial intelligence,
+                            and automation. It provides a simple syntax and an extensive library ecosystem,
+                            making it an excellent choice for beginners.<br><br>Python's readability and clarity make it
+                            easy to understand and learn. It emphasizes code readability by using indentation instead
+                            of brackets, which encourages clean and organized programming practices.
+                            This feature also makes Python a great language for collaborative projects.<br><br>
+                            Overall, Python is an excellent choice for students beginning to learn programming due to
+                            its readability, versatility, extensive library ecosystem, and supportive community.
+                            With Python, students can quickly grasp fundamental programming concepts while building
+                            practical projects and exploring various domains of computer science.
+                        </p>
+                        <br>
+                        <h3>Python 101 — <!--<s>-->$150<!--</s>--> <!--<span style="color:#FF6C04;">$100</span>--><a class="button" href="register.html">Register Now!</a></h3>
+                        <p>
+                            The Python 101 course is carefully catered to those with no or limited knowledge of computer science in general. This course is packed with collaboration 
+                            and projects, allowing students to not only thoroughly understand the computer science concepts, but also one of the most important engineering skills: team communication.
+                            Feel free to <a href="contact.html">contact us</a> with any questions about the course or by email at <a href="mailto:support@codeplusplus.dev">support@codeplusplus.dev</a>.
+                            <!-- <ol style="list-style-type: upper-roman;">
+                                <li>What is Coding?</li>
+                                <ol style="list-style-type: upper-alpha;">
+                                    <li>Representative systems</li>
+                                    <li>Counting systems</li>
+                                    <li>How does a computer work?</li>
+                                    <li>Programming languages</li>
+                                </ol>
+                                <li>Setting up an environment</li>
+                                <ol style="list-style-type: upper-alpha;">
+                                    <li>Installing Python (Windows, macOS, Linux)</li>
+                                    <li>Integrated Development Environments</li>
+                                </ol>
+                                <li>Data types</li>
+                                <li>Variables</li>
+                                <li>Arithmetic</li>
+                                <li>Type casting</li>
+                                <li>Strings</li>
+                                <li>Input</li>
+                                <li>Conditionals</li>
+                                <li>Loops</li>
+                                <li>Collections</li>
+                                <strong><li>Python 101 Capstone Project</li></strong>
+                            </ol> -->
+                        </p>
+                        <br>
+                        <h3>Python 102 — $150 <a class="button" href="register.html">Register Now!</a></h3>
+                        <p>
+                            The Python 102 course is a perfect fit for graduates of the Python 101 class. The class begins with a brief review and recap of the materials 
+                            covered in Python 101, and then quickly dives into new concepts. Please note that this recap will by no means impart the required knowledge from 
+                            the Python 101 course. In Python 102, students will learn about classes, exceptions, and collections in depth. Though new material will be covered, 
+                            a major part of the course will be devoted to exploring and writing some simple programs that we experience in our day-to-day lives: a timer, a stopwatch, 
+                            traffic lights, and elevators. Feel free to <a href="contact.html">contact us</a> with any questions about the course or by email at <a href="mailto:support@codeplusplus.dev">support@codeplusplus.dev</a>.
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+
+                <div id="html" class="lang">
+                    <div class="lang-logo">
+                        <img class="lang-logo" src="images/web.png" alt="HTML, CSS, and JS logos">
+                    </div>
+                    <div class="lang-desc">
+                        <h2>Web Development (HTML + CSS + JS)</h2>
                         <p>
                             HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JS (JavaScript)
                             are three essential languages used in web development. They work together to create and
@@ -131,6 +192,17 @@
                             customize existing designs, and gain the skills needed to pursue careers in web
                             development, design, or related fields.
                         </p>
+                        <br>
+                        <h3>Web Design 101 — $150 <a class="button">Register Now!</a></h3>
+                        <p>Web Design 101 is an entirely project based class. Students will brainstorm a website to make during the first week, 
+                            and will continuously learn new web design skills in HTML, CSS, and (limited) Javascript. As we learn more, students 
+                            will put together their project and will have a finished website by the end of the class. Students may have their 
+                            websites published to https://codeplusplus.dev/projects/name/ (duration TBD) and will also be given resources to publish their site on 
+                            their own domain. Additionally, students will learn how to use version control software such as 
+                            GitHub web, gh CLI, GitHub GUI, GitKraken GUI, and Git CLI. Feel free to 
+                            <a href="contact.html">contact us</a> with any questions about the course or by email at 
+                            <a href="mailto:support@codeplusplus.dev">support@codeplusplus.dev</a>.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -140,7 +212,7 @@
                 <div>
                     <h4>Contact Us</h4>
                     <p>Email: support@codeplusplus.dev</p>
-                    <p>Phone: +1-603-892-0434</p>
+                    <p>Phone: +1 (603) 892-0434</p>
                 </div>
                 <div id="credits">
                     <h4>Credits</h4>
@@ -153,5 +225,6 @@
         </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/spacer.js"></script>
+        <script src="scripts/classes.js"></script>
     </body>
 </html>
