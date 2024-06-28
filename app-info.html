@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Register for our Python course this August, and learn one of the most important skills in today's digital world!">
+        <meta name="description" content="Start by learning Python this summer, or learn about one of our upcoming programs!">
         <meta name="viewport" content="width=device-width, initial-scale=0.75">
         <title>Registration</title>
         <script src="scripts/hamburger.js"></script>
@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/font.css">
-        <link rel="stylesheet" href="styles/register.css">
+        <link rel="stylesheet" href="styles/app-info.css">
     </head>
-    <body onload="spacer()">
+    <body onload="spacer()" onresize="window.location.reload()">
         <header id="header" class="header">
             <div class="container">
                 <div class="subcontainer">
@@ -38,7 +38,7 @@
                                 <a class="nav-link" href="contact.html" onclick="hamburgerCloser()">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                                <a id="hire" class="nav-link, hire" href="app-info.html" onclick="hamburgerCloser()">Join the Team</a>
+                                <a id="hire" class="nav-link" href="app-info.html" onclick="hamburgerCloser()">Join the Team</a>
                             </li>
                         </ul>
                         <div class="hamburger">
@@ -51,10 +51,22 @@
             </div>
         </header>
         <main>
-            <iframe src="https://www.cognitoforms.com/f/SXqf4tIolEObim60g_MOlg/9" style="border:0;width:100%;" height="1263"></iframe>
-            <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+            <h1>Join the Code++ Team</h1>
+            <h2>Application information:</h2>
+            <ul>
+                <li>Personal/Contact information</li>
+                <li>Computer science knowledge</li>
+                <li>Robotics experience if applicable</li>
+                <li>Class of interest (for instructing)</li>
+                <li><strong>At least one letter of recommendation from an unrelated adult!</strong></li>
+            </ul>
+            <br>
+            <p style="display: inline;"><strong>Application deadline: 07/01/2024</strong></p><a class="button" href="https://codeplusplus.dev/apply">Apply Now!</a>
+            <br>
+            <p><em>Applications may still be considered if submitted after the deadline; however, priority will be given to timely applications. There is no guarantee of an application being reviewed until the next hiring cycle if submitted after the deadline. For more information or any questions, please <a href="contact.html">contact us.</a></em></p>
+            <img id="" src="https://media2.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=6c09b952r3bkbwb2h0htonwyzb82cxpg6fjedvrlmh4imupk&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Man with laptop gif">
         </main>
-        <footer>
+    <footer>
             <div id="footer-data">
                 <div>
                     <h4>Contact Us</h4>
@@ -71,6 +83,7 @@
             </div>
         </footer>
         <script src="scripts/hamburger.js"></script>
-    <script src="scripts/spacer.js"></script>
+        <script src="scripts/spacer.js"></script>
+        <script src="scripts/classes.js"></script>
     </body>
 </html>

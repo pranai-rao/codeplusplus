@@ -1,0 +1,28 @@
+main {
+    max-width: 800px;
+    margin: 25px auto;
+    font-family: 'inclusive', Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #FF6C04;
+}
+
+main {
+    font-size: larger;
+}
+
+.button {
+    color: black;
+    background-color: #FF6C04;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#laptopman {
+    width: 480px;
+    height: 360px;
+}

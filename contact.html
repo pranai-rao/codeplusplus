@@ -40,6 +40,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html" onclick="hamburgerCloser()">Contact Us</a>
                             </li>
+                            <li class="nav-item">
+                                <a id="hire" class="nav-link, hire" href="app-info.html" onclick="hamburgerCloser()">Join the Team</a>
+                            </li>
                         </ul>
                         <div class="hamburger">
                             <span class="bar"></span>
@@ -171,7 +174,6 @@
 
         function processPhoneNumber() {
             const phoneNumber = phoneInput.getNumber();
-
             // info.style.display = "";
             // info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
             info.innerHTML = `${phoneNumber}`;

@@ -137,6 +137,14 @@ body {
     font-weight: bold;
 }
 
+#hire {
+    padding: 15px 15px;
+    border-radius: 15px;
+    background-color: #a52cf7;
+    color: white;
+    font-weight: bold;
+}
+
 #footer-data {
     display: flex;
     justify-content: space-between;
